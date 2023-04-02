@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+   font-size: 36px;
+   font-weight: bold;
+   color: #333;
+   text-align: left;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+table {
+   width: 100%;
+}
+
+td {
+   display: inline-block;
+}
+
+div.cell_text {
+   display: table-cell;
+}
+
+img.details_img {
+   width: 30px;
+   height: 30px;
+}
+
+td.details {
+   padding-left: 5px;
+}
+
+#container {
+    border: 1px solid black;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+ }
+
+ #top-section {
+    text-align: center;
+ }
+ 
+ #expand-container {
+   overflow: hidden;
+   width: 100%;
+ }
+ 
+ #expand-contract {
+    margin-left: 20px;
+    margin-top: -100%;
+    width: max-content;
+    padding-top: 50px;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+ }
+ 
+ #expand-contract.expanded {
+    margin-top: 0;
+    display: inline-block;
+ }
+
+ #profile-image {
+    width: 250px;
+    height: 250px;
+ }
+
+ .navbar {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #444;
+   display: inline-block;
+ }
+
+ .navbar > li {
+   float: left;
+ }
+
+ .navbar > li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ /* Change the link color to #111 (black) on hover */
+ .navbar > li a:hover {
+   background-color: #111;
+ }
+
+ #hobby_list {
+   list-style-type: square;
+   background-color: white;
+   margin-left: 30px;
+ }
+
+ .bounce {
+   animation: bounce 1s ease-in-out;
+ }
+ 
+ @keyframes bounce {
+   0%, 100% { transform: translateY(0); }
+   50% { transform: translateY(-20px); }
+ }
+
+ .fade-in {
+   animation: fadeIn 1s ease-in-out;
+ }
+ 
+ @keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+ }
+
+ .scale-in {
+   animation: scaleIn 1s ease-in-out;
+ }
+ 
+ @keyframes scaleIn {
+   from { transform: scale(0); }
+   to { transform: scale(1); }
+ }

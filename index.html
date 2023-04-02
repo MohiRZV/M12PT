@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="script.js"></script>
+    <div id="container">
+        <div id="top-section" onclick="openinfo()">
+          <img id="profile-image" src="image.png">
+        </div>
+        
+        <div id="expand-container">
+          <div id="expand-contract" class="expanded">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul>
+            <p>
+              <h1>General information</h1>
+            </p>
+            <table class="fade-in">
+              <tr>
+                <td>
+                <img class="details_img" id="name_img" src="https://static.thenounproject.com/png/1946983-200.png">
+                </td>
+                <td class="details" id="name_text">Name</td>
+              </tr>
+              <tr>
+                <td>
+                <img class="details_img dob_img" src="https://uxwing.com/wp-content/themes/uxwing/download/festival-culture-religion/birth-date-icon.png">
+                </td>
+                <td class="details" id="dob_text">21.09.2000</td>
+              </tr>
+              <tr>
+                <td>
+                <img class="details_img education_img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/H804hWf2rBh.png">
+                </td>
+                <td class="details" id="education_text">Education</td>
+              </tr>
+              <tr>
+                <td>
+                <img class="details_img place_img" src="https://cdn-icons-png.flaticon.com/512/4779/4779002.png">
+                </td>
+                <td class="details" id="place_text">Cluj</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
