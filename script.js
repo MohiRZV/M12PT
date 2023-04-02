@@ -29,9 +29,7 @@ function setText() {
     dob.innerHTML = details["general"]["dob"];
     education.innerHTML = details["general"]["education"];
     place.innerHTML = details["general"]["place"];
-    } catch {
-
-    }
+    } catch {}
 
     try{
     const company = document.getElementById("company_text");
