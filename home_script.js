@@ -4,7 +4,7 @@ function openinfo(){
     el.classList.toggle('collapsed')
 }
 
-const baseUrl = "http://localhost:3000"
+const baseUrl = "http://localhost:5000"
 document.addEventListener('DOMContentLoaded', function() {
     fetch(baseUrl+'/general-info')
       .then(response => response.json())

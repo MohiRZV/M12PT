@@ -4,9 +4,9 @@ function openinfo(){
     el.classList.toggle('collapsed')
 }
 
-const baseUrl = "http://localhost:3000"
+const baseUrl = "http://127.0.0.1:5000"
 document.addEventListener('DOMContentLoaded', function() {
-    fetch(baseUrl+'/hobbies')
+    fetch(baseUrl+'/hobby')
       .then(response => response.json())
       .then(data => {
         console.log(data);
@@ -23,7 +23,7 @@ function populateData(data) {
     hobbies.forEach(element => {
         var li = document.createElement('li');
         li.setAttribute('class','hobby_item');
-        li.innerHTML = element["name"];
+        li.innerHTML = element;
         hobby_list.appendChild(li);
     });
 }

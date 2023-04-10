@@ -4,7 +4,7 @@ function openinfo(){
     el.classList.toggle('collapsed')
 }
 
-const baseUrl = "http://localhost:3000"
+const baseUrl = "http://localhost:5000"
 document.addEventListener('DOMContentLoaded', function() {
     fetch(baseUrl+'/work')
       .then(response => response.json())
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   function computeTime(from, to) {
-    const years = to.getFullYear() - from.getFullYear();
+    const years = to.getFullYear() - from.getFullYear() - 1;
     var months = to.getMonth() - from.getMonth();
     if (months < 0) {
         months = 12 + months;
